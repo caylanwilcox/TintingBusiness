@@ -1,0 +1,20 @@
+#WindowForm {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(37, 80, 45);
+  justify-content: space-between;
+}
+
+.form-row {
+  flex-basis: 30%;
+}
+#preview-container{
+  display: flex;
+  margin:0;
+
+  transform: translate(25%, 10%);
+  background-color: white;
+  width: 60vw;
+  height: 60vh;
+  justify-content: center;
+}

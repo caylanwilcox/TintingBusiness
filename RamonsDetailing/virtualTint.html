@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Page</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="virtualTint.css">
+    <script src="index.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <header>
+        <nav class="Top">
+            <div class="blue">PRO <span class="tints">TINTS</span></div>
+        </nav>
+        <nav class="banner2">
+            <div class="logoContainer">
+                <div class="logo"></div>
+            </div>
+            <div class="banner">20% OFF All Tints Apply code at checkout: Firstbooking2023</div>
+            <div class="nav_links">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="Book.html">Book</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Location.html">Location</a></li>
+                </ul>
+            </div>
+            <div class="location"></div>
+        </nav>
+    </header>
+
+      
+        
+    
+
+        <form id="WindowForm">
+            <div class="form-row">
+              <label for="car-make">Car Make:</label>
+              <select id="car-make">
+                <option value="audi">Audi</option>
+                <option value="bmw">BMW</option>
+                <option value="mercedes">Mercedes</option>
+                <!-- Add more car make options here -->
+              </select>
+            </div>
+          
+            <div class="form-row">
+              <label for="car-model">Car Model:</label>
+              <select id="car-model">
+                <!-- Add car model options based on selected make using JavaScript -->
+              </select>
+            </div>
+          
+            <div class="form-row">
+              <label for="tint-percentage">Tint Percentage:</label>
+              <select id="tint-percentage">
+                <option value="5">5%</option>
+                <option value="10">10%</option>
+                <option value="15">15%</option>
+                <!-- Add more tint percentage options here -->
+              </select>
+            </div>
+          
+            <button type="submit">Preview</button>
+          </form>
+</div>
+    <div id="preview-container">
+        <!-- Window tinting preview image will be displayed here -->
+    </div>
+
+    <script>
+        // Add your JavaScript code here to populate the car models based on the selected make
+        // and handle the form submission to display the window tinting preview image
+    </script>
+</body>
+<footer>
+  <div class="footer">
+      <p> 2023 Pro Tints LLC. All rights reserved.</p>
+  </div>
+</footer>
+</html>
