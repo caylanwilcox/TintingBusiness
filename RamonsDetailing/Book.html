@@ -3,35 +3,71 @@
 <html lang="en">
 
 <head>
-    <title>Page</title>
+   
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="book.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="index.js" defer></script>
+    <title>Book Appointment | Pro Tints</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
+
 
 <body>
     <header>
         <nav class="Top">
-            <a href="Home.html"><div class="blue">PRO<span class="tints">TINTS</span></div></a>
+            <a href="Home.html"><div class="blue">Marecelli<span class="tints">Tints  </span><span class="subLogo"></div></a>
+          
         </nav>
         <nav class="banner2">
             <div class="logoContainer">
                 <div class="logo"></div>
             </div>
-            <div class="banner">20% OFF All Tints Apply code at checkout: Firstbooking2023</div>
+         
             <div class="nav_links">
                 <ul>
                     <li><a href="Home.html">Home</a></li>
-                    <li id="book"><a href="Book.html">Book</a></li>
+                    <li><a href="Book.html">Book</a></li>
                     <li><a href="Contact.html">Contact</a></li>
                     <li><a href="Location.html">Location</a></li>
                 </ul>
             </div>
             <div class="location"></div>
         </nav>
+        
     </header>
-
+    <main>
+        <div class="booking-form-container">
+            <h2>Book Your Appointment</h2>
+            <form class="booking-form" action="/submit-appointment" method="post">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+    
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" required>
+    
+                <label for="service">Select Service</label>
+                <select id="service" name="service">
+                    <option value="tinting">Window Tinting</option>
+                    <option value="detailing">Car Detailing</option>
+                    <!-- Add more services as needed -->
+                </select>
+    
+                <label for="notes">Additional Notes (Optional)</label>
+                <textarea id="notes" name="notes" rows="4"></textarea>
+    
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+    </main>
 <footer>
     <div class="footer">
         <p> 2023 Pro Tints LLC. All rights reserved.</p>

@@ -1,40 +1,108 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Location | Pro Tints</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="location.css"> 
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="index.js" defer></script>
+    <title>Book Appointment | Pro Tints</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
-<body>
-    <header>
-        <nav class="Top">
-            <a href="Home.html"><div class="blue">PRO<span class="tints">TINTS</span></div></a>
-        </nav>
-        <nav class="banner2">
-            <div class="logoContainer">
-                <div class="logo"></div>
-            </div>
-            <div class="banner">20% OFF All Tints Apply code at checkout: Firstbooking2023</div>
-            <div class="nav_links">
-                <ul>
-                    <li><a href="Home.html">Home</a></li>
-                    <li><a href="Book.html">Book</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-                    <li><a href="Location.html">Location</a></li>
-                </ul>
-            </div>
-            <div class="location"></div>
-        </nav>
-    </header>
+
+    
+    
+    <body>
+        <header>
+            <nav class="Top">
+                <a href="Home.html"><div class="blue">Marecelli<span class="tints">Tints  </span><span class="subLogo"></div></a>
+              
+            </nav>
+            <nav class="banner2">
+                <div class="logoContainer">
+                    <div class="logo"></div>
+                </div>
+             
+                <div class="nav_links">
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Book.html">Book</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="Location.html">Location</a></li>
+                    </ul>
+                </div>
+                <div class="location"></div>
+            </nav>
+            
+        </header>
+<header>
+
+</header>
+
+<main>
+    <section class="location-info">
+        <h1>We're Located in the Greater Chicago Area</h1>
+        <p>Visit us for a professional service experience</p>
+        <div id="map"></div>
+    </section>
+</main>
 
 <footer>
-    <div class="footer">
-        <p> 2023 Pro Tints LLC. All rights reserved.<br>br>Designed By Caylan Wilcox</p>
-        
-    </div>
+
 </footer>
+
+<script>
+    function initMap() {
+        // HTML5 geolocation.
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                var pos = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: pos,
+                    zoom: 10
+                });
+
+                var marker = new google.maps.Marker({
+                    position: pos,
+                    map: map,
+                    title: 'Your Location'
+                });
+
+                // To center the map to Greater Chicago area regardless of user location
+                var chicago = {lat: 41.8781, lng: -87.6298};
+                map.setCenter(chicago);
+
+                // Additional marker for the store's location in the Chicago area
+                var storeMarker = new google.maps.Marker({
+                    position: chicago, // Replace with your store's exact coordinates
+                    map: map,
+                    title: 'Pro Tints Chicago'
+                });
+            }, function () {
+                handleLocationError(true, map.getCenter());
+            });
+        } else {
+            // Browser doesn't support Geolocation
+            handleLocationError(false, map.getCenter());
+        }
+    }
+
+    function handleLocationError(browserHasGeolocation, pos) {
+        // Handle error case
+    }
+</script>
+
+</body>
+</html>

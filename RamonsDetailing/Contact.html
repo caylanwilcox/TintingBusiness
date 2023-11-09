@@ -3,23 +3,29 @@
 <html lang="en">
 
 <head>
-    <title>Page</title>
+   
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="index.js" defer></script>
+    <title>Book Appointment | Pro Tints</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
+
 
 <body>
     <header>
         <nav class="Top">
-            <a href="Home.html"><div class="blue">PRO<span class="tints">TINTS</span></div></a>
+            <a href="Home.html"><div class="blue">Marecelli<span class="tints">Tints  </span><span class="subLogo"></div></a>
+          
         </nav>
         <nav class="banner2">
             <div class="logoContainer">
                 <div class="logo"></div>
             </div>
-            <div class="banner">20% OFF All Tints Apply code at checkout: Firstbooking2023</div>
+         
             <div class="nav_links">
                 <ul>
                     <li><a href="Home.html">Home</a></li>
@@ -30,10 +36,44 @@
             </div>
             <div class="location"></div>
         </nav>
+        
     </header>
-
+    <main>
+        <section class="contact-info">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or need further information, please feel free to contact us.</p>
+            <div class="contact-details">
+                <h2>Our Location</h2>
+                <p>123 Tint Street, Shadyside, Sunnystate</p>
+    
+                <h2>Call Us</h2>
+                <p>+1 555-PRO-TINT (555-776-8468)</p>
+    
+                <h2>Email Us</h2>
+                <p>support@protints.com</p>
+            </div>
+        </section>
+    
+        <section class="contact-form-section">
+            <form class="contact-form" action="submit-form-endpoint" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
 <footer>
     <div class="footer">
-        <p> 2023 Pro Tints LLC. All rights reserved.</p>
+        <p>2023 Marecelli Tints LLC. All rights reserved.</p>
     </div>
 </footer>

@@ -1,20 +1,101 @@
-#WindowForm {
-  display: flex;
-  flex-direction: row;
-  background-color: rgb(37, 80, 45);
-  justify-content: space-between;
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(32, 32, 35); /* Dark background color */
+  color: #ccc; /* Light grey text color */
+  font-family: 'Arial', sans-serif; /* or your preferred font */
+}
+a:link, a:visited, a:hover, a:active {
+  color: inherit; /* This will make the link color the same as the parent element */
+  text-decoration: none; /* Optional: removes underline from links */
+}
+header {
+  width: 100%;
+  position: fixed; /* Fixed position at the top */
+  top: 0;
+  z-index: 1000; /* Ensures header stays above other content */
+  background: #000; /* Black header background */
 }
 
-.form-row {
-  flex-basis: 30%;
-}
-#preview-container{
+main {
+  padding-top: 70px; /* Adjust based on the actual height of your header */
+  min-height: calc(100vh - 140px); /* Adjust to account for both header and footer */
   display: flex;
-  margin:0;
-
-  transform: translate(25%, 10%);
-  background-color: white;
-  width: 60vw;
-  height: 60vh;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  position: fixed; /* Fixed position at the bottom */
+  bottom: 0;
+  z-index: 1000;
+  background: #000; /* Black footer background */
+  color: rgb(112, 194, 112); /* Green text color for the footer */
+  text-align: center;
+  padding: 20px 0; /* Padding inside the footer */
+}
+
+.coming-soon-container {
+  max-width: 600px;
+  padding: 40px;
+  background-color: #202020; /* Dark container background */
+  border-radius: 8px;
+  margin: auto;
+}
+
+h1 {
+  color: rgb(112, 194, 112); /* Green color to match the theme */
+  margin-bottom: 20px;
+}
+
+p {
+  color: #ccc; /* Light grey text color */
+}
+
+.notify-me-form {
+  margin-top: 30px;
+}
+
+.notify-me-form input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #333; /* Border color for input */
+  background-color: #282828; /* Dark input background */
+  color: #ccc; /* Light grey text color */
+  border-radius: 4px;
+}
+
+.notify-me-form button {
+  padding: 10px 20px;
+  background-color: rgb(112, 194, 112); /* Green button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.notify-me-form button:hover {
+  background-color: rgb(90, 160, 90); /* Darker green on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .coming-soon-container {
+      padding: 20px;
+  }
+
+  .notify-me-form input,
+  .notify-me-form button {
+      width: 100%;
+      margin: 10px 0; /* Stack input and button on top of each other */
+  }
+
+  main {
+      padding-top: 60px; /* Adjust for smaller header */
+  }
 }

@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Black background for the body */
+    color: #ccc; /* Light grey text color for readability */
+}
+
+header, footer {
+    background-color: #000;
+    color: rgb(112, 194, 112); /* Green text color for header and footer */
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.gallery-section h1 {
+    color: rgb(112, 194, 112); /* Green color for headings */
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    background-color: #202020; /* Dark grey for item background */
+    border: 1px solid #333; /* Border color for items */
+    border-radius: 8px; /* Rounded corners for gallery items */
+    overflow: hidden; /* Keeps the content within the border radius */
+    height: 200px; /* Fixed height for gallery items */
+    background-position: center; /* Center the background image */
+    background-size: cover; /* Cover the entire area of the item */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Stack images in a single column on smaller screens */
+    }
+}

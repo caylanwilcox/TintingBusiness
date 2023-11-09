@@ -1,0 +1,21 @@
+/* Location page specific styles */
+
+.location-info {
+    text-align: center;
+    color: #ccc;
+    padding: 40px;
+    background-color: rgb(32, 32, 35);
+}
+
+#map {
+    height: 400px; /* Specify a height for the map */
+    width: 100%; /* The map will take the full width of the container */
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Additional responsive styling if needed */
+@media (max-width: 768px) {
+    /* Adjust map size or other styles for small screens */
+}
