@@ -1,6 +1,8 @@
 
 /*pretty pink background-color:#c341844f; */
 /* Navigation bar */
+
+
 * {
   box-sizing: border-box;
 }
@@ -26,6 +28,243 @@ font-weight: bold;
  
  padding: 10px;
 }
+.banner2{
+
+  background-color:#101110; 
+  color:rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+height: auto;
+}
+
+.Top a{
+  display: flex;
+cursor: pointer;
+
+
+}
+
+.nav_links{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+   /* color:rgb(255, 255, 255);*/
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+width: 100%;
+ 
+   font-weight: lighter;
+   font-style:inherit;
+ font-size: 12px;
+  padding:0;
+ 
+}
+
+
+nav ul {
+ 
+ text-align: right;
+    display: inline-block;
+    margin:8px 20px ;
+    cursor:pointer;
+ 
+}
+
+nav ul li {
+
+    display: inline-block;
+    margin:8px 20px ;
+    cursor:pointer;
+ 
+}
+#book{
+  display:inline-flex ;
+  background-color: rgba(102, 161, 104, 0.241);
+  padding:15px;
+width: 100px;
+justify-content: center;
+height: auto;
+}
+
+#checkout{
+display: flex;
+justify-content: flex-end;
+height: 20px;
+width: 20px;
+background-color: red;
+}
+
+
+
+.billboard{
+ 
+
+
+  height: 80%;
+  display:flex;
+  width:100%;
+ margin:0;
+ padding:0; 
+  background-image: url("shutterstock_1992133460.jpg") ;
+  background-size:cover;
+  background-repeat: no-repeat;
+background-position: center;
+
+
+
+}
+.heroText h1{
+  display:flex;
+    color:white;
+    position:relative;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 25px;
+  
+  }
+.slide{
+  display:flex;
+
+  width:100%;
+  margin:0vw;
+  position:relative;
+
+  flex-direction: row;
+
+
+}
+.squareimage1, .squareimage2, .squareimage3, .squareimage4 {
+  order: 0;
+  display: flex;
+  width: 50%;
+  margin: 0;
+  cursor: pointer;
+  padding: 0; 
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.529);
+}
+
+.squareimage1:hover
+{
+  background-color: rgba(0, 0, 0, 0.266);
+  border-bottom: 5px solid rgb(128, 166, 134);
+
+}
+.squareimage2:hover
+{
+     background-color: rgba(0, 0, 0, 0.266);
+     border-bottom: 5px solid rgb(96, 209, 113);
+}
+
+.squareimage3:hover
+{
+     background-color: rgba(0, 0, 0, 0.266);
+     border-bottom: 5px solid rgb(96, 209, 113);
+
+}
+
+.squareimage4:hover
+{
+   background-color: rgba(0, 0, 0, 0.266);
+   border-bottom: 5px solid rgb(96, 209, 113);
+
+}
+.squareimagewords{
+  position:relative;
+  font-size: 25px;
+  order:0;
+  display:flex;
+  width:50%;
+  background-color: rgba(0, 0, 0, 0.792);
+  
+  
+font-size: xx-large;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
+
+
+color:rgb(198, 198, 198);
+  background-size:auto;
+  background-repeat: no-repeat;
+  align-items: top;
+  background-position: center;
+  justify-content: center;
+  margin:0;
+  margin: top;
+  font-weight:bolder;
+  padding-right:10px;
+;
+}
+.divide{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  color:white;
+  font-size: 3rem;
+  margin:1rem 0;
+  box-shadow: 20px 0px 20px rgb(0, 0, 0); /* Add shadow effect */
+}
+.section1{
+display:flex;
+justify-content: center;
+}
+.second_container {
+  display: flex; /* Use flexbox to align items side by side */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ccc;
+  padding: 40px;
+  border-radius: 8px;
+  margin: 1rem auto 40px;
+  max-width: 98%;
+  gap: 20px; /* Space between image and text content */
+
+}
+
+.second_slideA {
+  flex: 1; /* Allow the image container to grow and take up free space */
+  max-width: 50%; /* Maximum width of the image container */
+}
+
+.second_slideA img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: round the corners of the image */
+}
+
+.second_slideB {
+  flex: 2; /* Allow the text container to take up twice as much space as the image container */
+  max-width: 50%;
+  /* ... Other styles ... */
+}
+
+/*pretty pink background-color:#c341844f; */
+/* Navigation bar */
+* {
+  box-sizing: border-box;
+}
+body {
+
+
+background-color: rgb(0, 0, 0);
+}
+
+.green{
+  color: rgb(112, 194, 112);
+}
+span{
+  color:rgb(74, 131, 83)
+}
+
 .banner2{
 
   background-color:#101110; 
@@ -164,23 +403,20 @@ background-position: center;
 
 
 }
-.squareimage1{
-  order:0;
-  display:flex;
-  width:50%;
- margin:0;
- justify-content: center;
- align-items: center;
- padding:0; 
-  height:100%;
-  cursor:pointer;
-  background-size:cover;
+.squareimage1, .squareimage2, .squareimage3, .squareimage4 {
+  order: 0;
+  display: flex;
+  width: 50%;
+  margin: 0;
+  cursor: pointer;
+  padding: 0; 
+  height: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
   background-position: center;
   border-right: 1px solid rgba(255, 255, 255, 0.529);
-
 }
 
 .squareimage1:hover
@@ -189,66 +425,19 @@ background-position: center;
   border-bottom: 5px solid rgb(128, 166, 134);
 
 }
-.squareimage2{
-  order:0;
-  display:flex;
-  width:50%;
- margin:0;
- cursor:pointer;
- padding:0; 
-  height:100%;
-  
-  background-size:cover;
-  background-repeat: no-repeat;
-  align-items: center;
-  justify-content: center;
-  background-position: center;
-  border-right: 1px solid rgba(255, 255, 255, 0.529);
-}
 .squareimage2:hover
 {
      background-color: rgba(0, 0, 0, 0.266);
      border-bottom: 5px solid rgb(96, 209, 113);
 }
-.squareimage3{
-  order:0;
-  display:flex;
-  width:50%;
- margin:0;
- cursor:pointer;
- padding:0; 
-  height:100%;
 
-  background-size:cover;
-  background-repeat: no-repeat;
-  align-items: center;
-  justify-content: center;
-  background-position: center;
- 
-  border-right: 1px solid rgba(255, 255, 255, 0.529);
-}
 .squareimage3:hover
 {
      background-color: rgba(0, 0, 0, 0.266);
      border-bottom: 5px solid rgb(96, 209, 113);
 
 }
-.squareimage4{
-  order:0;
-  display:flex;
-  width:50%;
- margin:0;
- cursor:pointer;
- padding:0; 
-  height:100%;
-  
-  background-size:cover;
-  background-repeat: no-repeat;
-  align-items: center;
-  justify-content: center;
-  background-position: center;
- 
-}
+
 .squareimage4:hover
 {
    background-color: rgba(0, 0, 0, 0.266);
@@ -281,6 +470,7 @@ color:rgb(198, 198, 198);
   padding-right:10px;
 ;
 }
+
 .divide{
   width: 100%;
   display: inline-block;
@@ -327,10 +517,23 @@ justify-content: center;
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  #book{
+    display:inline-flex ;
+    background-color: rgba(102, 161, 104, 0.241);
+    padding:1px;
+  width: 50px;
+
+
+  }
   .second_container {
     flex-direction: column; /* Stack image and content on top of each other on small screens */
   }
-
+  .blue{
+  align-items: center;
+    display: flex;
+    font-size: large;
+    margin: 0;
+  }
   .second_slideA,
   .second_slideB {
     max-width: 100%; /* Both image and content take up full container width */
@@ -343,7 +546,17 @@ justify-content: center;
 .second_slideB {
   max-width: 100%; /* Ensure the content doesn't exceed the width of its container */
 }
+.slide{
+  display:flex;
 
+  width:100%;
+  margin:0vw;
+  
+
+  flex-direction: row;
+
+
+}
 .second_slideB h2 {
   color: rgb(112, 194, 112); /* Green color for headings */
   margin-bottom: 20px; /* Space below the heading */
@@ -386,20 +599,74 @@ main {
   }
 }
 
-.footer{
+@media (max-width: 500px) {
+  .subLogo{
+    display: none; 
+    padding: 0;
+    
+  }
+  .slide {
+      flex-direction: column; /* Stack the containers vertically */
+      width: 100%;
+      height: 100%;
+  }
+
+  .squareimage1, .squareimage2, .squareimage3, .squareimage4 {
+      width: 100%; /* Each container takes full width */
+      height: 100%; /* Adjust height automatically */
+      border-right: none; /* Remove right border */
+      border-bottom: 1px solid rgba(255, 255, 255, 0.529); /* Add bottom border */
+  }
+
+  /* Adjust the hero text size for smaller screens */
+  .heroText h1 {
+      font-size: 20px; /* Smaller font size */
+  }
+
+  .nav_links {
+    flex-direction: row; /* Align navigation links in a row */
+    justify-content: space-around; /* Evenly space out the links */
+    width: 100%;
+}
+
+.nav_links ul {
+    display: flex; /* Display list items in a row */
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+    width: 100%; /* Full width */
+    justify-content: space-around; /* Space items evenly */
+}
+
+.nav_links ul li {
+    display: inline-block; /* Inline-block for list items */
+    margin: 0 10px; /* Space between items */
+}
+/* Adjust footer styles */
+.footer {
+    flex-direction: column; /* Stack footer content */
+    align-items: center; /* Center-align items */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.footer p {
+    text-align: center; /* Center-align footer text */
+    margin: 5px 0; /* Add margin for spacing */
+}
+.billboard{
  
-  display: flex;
-  justify-content: center;
- color: white;
- margin-bottom: 15px;
-  width: 100%;
+
+
+
+
+  width:100%;
+ margin:0;
+ padding:0; 
+  background-image: url("shutterstock_1992133460.jpg") ;
+  background-size:contain;
+  background-repeat: no-repeat;
+background-position: center;
+
+
 
 }
-.footer p{
-  
- 
-  
-display: block;
- color: white;
-  text-align: center;
 }
