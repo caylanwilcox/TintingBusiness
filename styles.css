@@ -514,7 +514,9 @@ justify-content: center;
   max-width: 50%;
   /* ... Other styles ... */
 }
-
+.Top{
+  height: 15%;
+}
 /* Responsive adjustments */
 @media (max-width: 768px) {
   #book{
@@ -532,7 +534,7 @@ justify-content: center;
   align-items: center;
     display: flex;
     font-size: large;
-    margin: 0;
+
   }
   .second_slideA,
   .second_slideB {
@@ -603,7 +605,7 @@ main {
   .subLogo{
     display: none; 
     padding: 0;
-    
+
   }
   .slide {
       flex-direction: column; /* Stack the containers vertically */
