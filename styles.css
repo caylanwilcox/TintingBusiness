@@ -630,7 +630,7 @@ main {
     justify-content: space-around; /* Evenly space out the links */
     width: 100%;
 }
-
+.nav{ height: auto;}
 .nav_links ul {
     display: flex; /* Display list items in a row */
     padding: 0; /* Reset padding */
@@ -665,7 +665,7 @@ main {
  margin:0;
  padding:0; 
   background-image: url("shutterstock_1992133460.jpg") ;
-  background-size:contain;
+  background-size:636px;
   background-repeat: no-repeat;
 background-position: center;
 
