@@ -643,6 +643,7 @@ main {
 }
 /* Adjust footer styles */
 .footer {
+  color:white;
     flex-direction: column; /* Stack footer content */
     align-items: center; /* Center-align items */
     padding: 10px; /* Add padding for spacing */
